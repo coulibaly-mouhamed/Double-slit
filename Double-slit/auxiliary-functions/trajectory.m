@@ -71,7 +71,7 @@ for n=1:p.nimpacts
     end
     
         % Diplay results
-    if mod(n-1,20)==0
+    if mod(n-1,100)==0
         ui_av = xi - x_data(n,:); vi_av = yi - y_data(n,:);
         disp(['impact=',num2str(n),'  xi=',num2str(xi),'  yi=',num2str(yi),...
         '  ui=',num2str(ui_av),'  vi=',num2str(vi_av),...
