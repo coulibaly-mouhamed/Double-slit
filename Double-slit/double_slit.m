@@ -5,7 +5,7 @@ mem = 0.995;
 Gam = mem*4.21;
 Nx = 256; Ny = Nx; 
 Lx = 40; Ly = Lx; dt_desired = min(Lx/Nx,Ly/Ny)/8;
-plotoption = 40;
+plotoption = inf;
 p = problem_setup_double_slit(Nx,Ny,Lx,Ly,Gam,dt_desired);
 
 %% Run simulation
