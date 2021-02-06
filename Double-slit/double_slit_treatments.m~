@@ -1,3 +1,0 @@
-vect_dir= [cos(theta) sin(theta)];
-c =-X.^(cos(theta))-Y.^(sin(theta));
-pos_mur

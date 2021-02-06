@@ -1,7 +1,7 @@
 function [theta_r,x_f,y_f]=double_slit(xi)
 
 %% Set parameters
-mem = 0.995;
+mem = 0.9;
 Gam = mem*4.21;
 Nx = 256; Ny = Nx; 
 Lx = 40; Ly = Lx; dt_desired = min(Lx/Nx,Ly/Ny)/8;
@@ -12,7 +12,7 @@ p = problem_setup_double_slit(Nx,Ny,Lx,Ly,Gam,dt_desired);
 p.xi = xi; p.yi = -10; p.ui =0; p.vi = 0.2;
 % theta = 0*pi/180;
 % p.ui=speed_steady*cos(theta); p.vi = speed_steady*sin(theta);
-p.nimpacts = 700;      % Number of impacts
+p.nimpacts = 600;      % Number of impacts
 %p.l1 = 14.7/4.75/2; % Half of opening length
 p.l1 = 2;
 %p.l1 = 1.55;
